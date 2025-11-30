@@ -7,10 +7,11 @@ async function pegarDados (){
     return listaChuck;
 }
 
-const ditaChuck = await pegarDados();
-console.log(ditaChuck);
+// Teste de console
+// const ditaChuck = await pegarDados();
+// console.log(ditaChuck);
 
-console.log(ditaChuck.value);
-console.log(ditaChuck.icon_url);
+// console.log(ditaChuck.value);
+// console.log(ditaChuck.icon_url);
 
 export {pegarDados}
