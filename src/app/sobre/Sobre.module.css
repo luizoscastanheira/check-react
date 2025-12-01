@@ -1,0 +1,28 @@
+/* Estilo da página inicial */
+
+.containerMain {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.containerGeral{
+    border: solid 1px black;
+    max-width: 600px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.imagem {
+    max-width: 500px ;
+    height: auto;
+    border-radius: 15px;
+}
