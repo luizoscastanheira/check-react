@@ -2,7 +2,7 @@ import "./globals.css";
 import Topo from "@/componentes/Topo";
 
 export const metadata = {
-  title: "Check Point React",
+  title: "Check Point React - Um SPA para buscar fatos históricos.",
   description: "Criado por Luiz Otávio",
 };
 

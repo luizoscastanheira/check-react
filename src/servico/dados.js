@@ -6,7 +6,7 @@ async function pegarDados (){
     const listaDeFatosHistoricos = (await axios.get(endPoint)).data;
 
     return listaDeFatosHistoricos;
-}
+};
 
 // Função para pegar apenas um ano especificado
 async function pegarDadosAno (ano){
@@ -14,30 +14,15 @@ async function pegarDadosAno (ano){
     const listaDeFatosAno = (await axios.get(endPoint)).data;
 
     return listaDeFatosAno;
-}
+};
 
-// função de aleatoriedade
+// Funçao para pegar dados de forma aleatória
+async function pegarFatoAleatorio (){
+    const endPoint = 'https://apifatoshistoricos.onrender.com/random';
+    const listaDeFatosAno = (await axios.get(endPoint)).data;
 
-function gerarAnoAleatorio() {
-    // Definindo o intervalo (inclusivo)
-    const min = 1914;
-    const max = 2022;
-
-    // Calcula a diferença entre o máximo e o mínimo + 1
-    // (2022 - 1914 + 1 = 109)
-    const range = max - min + 1;
-
-    // 1. Math.random() gera um número entre [0, 1)
-    // 2. Multiplica por 'range' para ter um número entre [0, 109)
-    // 3. Math.floor() arredonda para o número inteiro mais próximo (0 a 108)
-    // 4. Adiciona 'min' (1914) para deslocar o intervalo para [1914, 2022]
-    const ano = Math.floor(Math.random() * range) + min;
-
-    return ano;
-}
-// teste da função
-const anoSorteado = gerarAnoAleatorio();
-console.log(anoSorteado); // Exemplo: 1985
+    return listaDeFatosAno;
+};
 
 
 // Teste de console funçao pegarDados()
@@ -53,4 +38,8 @@ console.log(anoSorteado); // Exemplo: 1985
 //console.log(fatoAno.Ano)
 //console.log(fatoAno.Fato)
 
-export {pegarDados, pegarDadosAno}
+// Teste de console função pegarFatoAleatorio
+//const fatoAleatorio = await pegarFatoAleatorio();
+//console.log(fatoAleatorio)
+
+export {pegarDados, pegarDadosAno, pegarFatoAleatorio}

@@ -10,7 +10,7 @@ export default function Topo(){
             <h1>Bem-vindo ao Fatos Históricos!!!</h1>
         </div>
 
-        <small><marquee className={estilos.marca} direction="down" behavior="alternate" scrolldelay="300">Um SPA Retrô que Consome uma API contando História!!!</marquee></small>
+        <small><marquee className={estilos.marca} direction="down" behavior="alternate" scrolldelay="300">Um SPA Retrô (incluindo esta tag) que Consome uma API contando História!!!</marquee></small>
 
         <nav className={estilos.containerNav}>
             <Link className={estilos.navLink} href="/sobre">Sobre o Programador</Link>

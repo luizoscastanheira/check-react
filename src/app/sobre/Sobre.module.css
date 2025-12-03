@@ -2,8 +2,8 @@
 
 .containerMain {
     width: 100%;
-    min-height: 50vh;
     display: flex;
+    padding: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -12,11 +12,12 @@
 
 .containerGeral{
     border: solid 1px black;
-    max-width: 600px;
+    max-width: 700px;
     padding: 15px;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 
 }
