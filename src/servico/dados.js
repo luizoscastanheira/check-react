@@ -2,8 +2,14 @@ import axios from "axios";
 
 // Função para pegar a coleção inteira
 async function pegarDados (){
-    const endPoint = 'https://apifatoshistoricos.onrender.com';
-    const listaDeFatosHistoricos = (await axios.get(endPoint)).data;
+    listaDeFatosHistoricos = [];
+
+    try{
+        const endPoint = 'https://apifatoshistoricos.onrender.com';
+        const listaDeFatosHistoricos = (await axios.get(endPoint)).data;
+    } catch (error) {
+        console.error("Erro ao caputurar dados", error);
+    }
 
     return listaDeFatosHistoricos;
 };
